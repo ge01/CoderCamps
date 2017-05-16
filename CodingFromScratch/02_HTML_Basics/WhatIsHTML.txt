@@ -1,0 +1,1 @@
+HTML stands for Hypertext Markup Language. It was created to mark up (i.e., add formatting tags to) a text document to be rendered by a browser. HTML tells the browser how to display the content. We use HTML to mark up a document using tags that a browser then reads. It uses the markup to divide the document into elements which it will eventually display.
