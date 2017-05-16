@@ -1,0 +1,4 @@
+Program Details
+Time to complete: 30 - 40 Hours
+Prerequisites: None
+Core Technologies and Tools: HTML5, CSS3, JavaScript, Git
