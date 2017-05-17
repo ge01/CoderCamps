@@ -76,3 +76,34 @@ body {
   background-color: #ddd;
   color: black;
 }
+/* Style the links inside the contact page */
+.email {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #003399;
+  border: 3px solid #0099CC;
+  margin-top: 40px;
+}
+
+.email:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add a blue background color to the footer */
+footer {
+  overflow: hidden;
+  background-color: #003399;
+  margin-top: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/* Format footer links */
+footer a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+}
