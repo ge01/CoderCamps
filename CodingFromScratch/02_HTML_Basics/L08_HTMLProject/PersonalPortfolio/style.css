@@ -30,3 +30,7 @@ body {
     background-color: #0099CC;
     color: white;
 }
+/* Add a space between cities and paragraph*/
+.cities {
+  margin-top: 10px;
+}
