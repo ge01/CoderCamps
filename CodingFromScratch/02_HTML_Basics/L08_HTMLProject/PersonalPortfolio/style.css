@@ -27,10 +27,22 @@ body {
 }
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #0099CC;
-    color: white;
+  background-color: #0099CC;
+  color: white;
 }
 /* Add a space between cities and paragraph*/
 .cities {
   margin-top: 10px;
+}
+/* Center project info and add a border*/
+.projects {
+  text-align: left;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #0099CC;
+  padding: 10px;
+}
+/* Add margin to bottom of header to space project info*/
+.portfolio-header {
+  margin-bottom: 40px;
 }
