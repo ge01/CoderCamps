@@ -47,6 +47,19 @@
       <p id="demo">A Paragraph.</p>
       <button type="button" onclick="myFunction()">Try it</button>
     </div>
+    <br />
+    <form>
+      <div>
+        <label for="miles">Miles driven:</label>
+        <input id="miles" type="number" onclick="computeMPG" placeholder="Enter miles" />
+      </div>
+      <div>
+        <label for="gallons">Gallons of gas used:</label>
+        <input id="gallons" type="number" onclick="computeMPG" placeholder="Enter gallons" />
+      </div>
+      <button id="myBtn" type="button">Calculate MPG</button>
+    </form>
+    <h2 id="outMPG"></h2>
     <footer>
       <a>Codepen</a>
       <a>Github</a>

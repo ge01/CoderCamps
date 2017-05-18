@@ -1,8 +1,25 @@
 // The user should be able to insert or enter text into a text area
-function myFunction(){
+function myFunction() {
   document.getElementById('demo').innerHTML = "Paragraph changed.";
 }
 
+document.getElementById("myBtn").addEventListener("click", function(){
+  computeMPG();
+});
+
+function computeMPG() {
+  // Get the miles driven and assign it to the miles variable.
+  var miles = document.getElementById('miles').value;
+
+  // Get the gallons used and assign it to the gallons variable.
+  var gallons = document.getElementById('gallons').value;
+
+  // Calculate MPG
+  var mpg = miles / gallons;
+
+  // Display MPG
+  document.getElementById('outMPG').innerHTML = "Your car's MPG: " + mpg.toFixed(2);
+}
 
 // The user should be able to click a button that reports on statistics about the text
 // Total number of words
