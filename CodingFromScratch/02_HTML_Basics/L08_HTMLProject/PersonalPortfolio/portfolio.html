@@ -19,16 +19,35 @@
         <li><a href="index.html">Personal Website</a></li>
           <ul>
             <li>My first personal website with a Home page, a Portfolio page,
-              and a Contact page.</li>
+              and a Contact page.
+            </li>
           </ul>
-        <li>Future Project</li>
+        <li>JavaScript Project</li>
+        <ul>
+          <li>This project enables the user to see how many words, sentences, spaces
+            and average words per sentence are contained within a passage of text.
+          </li>
+          <br />
+          <form>
+            <textarea id="sentence" type="text" onclick="totalWords" rows="4" cols="50"></textarea>
+            <div>
+              <button id="wordBtn" type="button">Total Words</button>
+            </div>
+            <h2 id="outWords"></h2>
+            <h2 id="outSentences"></h2>
+            <h2 id="wordsPerSentence"></h2>
+            <h2 id="outSpaces"></h2>
+          </form>
+        </ul>
         <li>Future Project</li>
       </ul>
     </div>
+
     <footer>
       <a>Codepen</a>
       <a>Github</a>
       <a>Twitter</a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
