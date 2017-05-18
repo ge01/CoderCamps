@@ -1,4 +1,3 @@
-// The user should be able to insert or enter text into a text area
 function myFunction() {
   document.getElementById('demo').innerHTML = "Paragraph changed.";
 }
@@ -19,6 +18,17 @@ function computeMPG() {
 
   // Display MPG
   document.getElementById('outMPG').innerHTML = "Your car's MPG: " + mpg.toFixed(2);
+}
+
+// The user should be able to insert or enter text into a text area
+document.getElementById("wordBtn").addEventListener("click", function(){
+  totalWords();
+});
+
+function totalWords() {
+  var words = document.getElementById('sentence').value;
+
+  document.getElementById('outWords').innerHTML = words;
 }
 
 // The user should be able to click a button that reports on statistics about the text
