@@ -5,7 +5,7 @@ document.getElementById("wordBtn").addEventListener("click", function(){
   totalSentences();
   console.log(totalWords());
   console.log(totalSentences());
-  //avgWrdPerSent(totalWords(), totalSentences());
+  avgWrdPerSent(totalWords(), totalSentences());
 });
 
 /*
@@ -49,6 +49,9 @@ function totalSentences() {
 }
 
 // Average words per sentence
-
+function avgWrdPerSent(numWords, numSentences) {
+  var wps = numWords / numSentences;
+  document.getElementById("wordsPerSentence").innerHTML = "Average Words Per Sentence: " + wps;
+}
 
 // Total number of spaces
