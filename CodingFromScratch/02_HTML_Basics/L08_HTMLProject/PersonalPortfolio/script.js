@@ -6,6 +6,9 @@ document.getElementById("wordBtn").addEventListener("click", function(){
   console.log(totalWords());
   console.log(totalSentences());
   avgWrdPerSent(totalWords(), totalSentences());
+  var totalSpaces = totalWords() - 1;
+  console.log(totalSpaces);
+  document.getElementById("outSpaces").innerHTML = "Total Number of Spaces " + totalSpaces;  
 });
 
 /*
