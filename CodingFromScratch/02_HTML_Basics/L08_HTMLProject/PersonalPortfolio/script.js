@@ -1,38 +1,54 @@
-function myFunction() {
-  document.getElementById('demo').innerHTML = "Paragraph changed.";
-}
-
-document.getElementById("myBtn").addEventListener("click", function(){
-  computeMPG();
-});
-
-function computeMPG() {
-  // Get the miles driven and assign it to the miles variable.
-  var miles = document.getElementById('miles').value;
-
-  // Get the gallons used and assign it to the gallons variable.
-  var gallons = document.getElementById('gallons').value;
-
-  // Calculate MPG
-  var mpg = miles / gallons;
-
-  // Display MPG
-  document.getElementById('outMPG').innerHTML = "Your car's MPG: " + mpg.toFixed(2);
-}
-
+// The user should be able to click a button that reports on statistics about the text
 // The user should be able to insert or enter text into a text area
 document.getElementById("wordBtn").addEventListener("click", function(){
   totalWords();
+  totalSentences();
+  console.log(totalWords());
+  console.log(totalSentences());
+  //avgWrdPerSent(totalWords(), totalSentences());
 });
 
+/*
+document.getElementById("sentenceBtn").addEventListener("click", function(){
+  totalSentences();
+});
+*/
+// Total number of words
 function totalWords() {
   var words = document.getElementById('sentence').value;
+  var wordCounter = 1;
+  console.log(words[2]);
 
-  document.getElementById('outWords').innerHTML = words;
+  for (var i = 0; i <= words.length; i++) {
+    if(words[i] === " "){
+      wordCounter++;
+    }
+    console.log(words[i]);
+  }
+
+  console.log(wordCounter);
+  document.getElementById('outWords').innerHTML = "Total Number of Words: " + wordCounter;
+  return wordCounter;
 }
 
-// The user should be able to click a button that reports on statistics about the text
-// Total number of words
 // Total number of sentences
+function totalSentences() {
+  var textAreaString = document.getElementById("sentence").value;
+  var periodCounter = 0;
+
+  console.log(textAreaString);
+
+  for (var j = 0; j <= textAreaString.length; j++) {
+    if (textAreaString[j] === ".") {
+      periodCounter++;
+    }
+  }
+  console.log(periodCounter);
+  document.getElementById("outSentences").innerHTML = "Total Number of Sentences: " + periodCounter;
+  return periodCounter;
+}
+
 // Average words per sentence
+
+
 // Total number of spaces
