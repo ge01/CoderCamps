@@ -1,3 +1,8 @@
+/*This defines Semantic Elements as blocks for older browsers  */
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
 body {
   background-color: grey;
 }
