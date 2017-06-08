@@ -114,8 +114,29 @@
 //   console.log(myInput.val());
 // }
 
-let btn = $('#myBtn');
+// let btn = $('#myBtn');
+//
+// btn.click(() => {
+//   alert('hello world');
+// })
+console.log("Hello World!");
 
-btn.click(() => {
-  alert('hello world');
-})
+function divideNumbers(a,b){
+  return a/b;
+}
+
+console.log(divideNumbers(10,2));
+
+function ifStatement(a) {
+  let number17 = a;
+  let isSeventeen;
+  console.log(isSeventeen);
+  console.log(number17);
+  if(number17 === 17){
+    isSeventeen = true;
+    console.log(isSeventeen);
+    console.log("It worked");
+  }
+}
+
+ifStatement(16);
